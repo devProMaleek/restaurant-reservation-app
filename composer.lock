@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5aa33c4c9c59a25291445d8226153066",
+    "content-hash": "191925a55075aaef17c836fbfa989388",
     "packages": [
         {
             "name": "brick/math",
@@ -5416,6 +5416,66 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel/breeze",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "416c0923860dcef96b977bd4d385c681f65e896a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/416c0923860dcef96b977bd4d385c681f65e896a",
+                "reference": "416c0923860dcef96b977bd4d385c681f65e896a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^9.0",
+                "illuminate/support": "^9.0",
+                "illuminate/validation": "^9.0",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "laravel/framework": "<9.19.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2022-07-19T14:03:23+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "v1.15.0",
             "source": {
@@ -5693,6 +5753,66 @@
                 }
             ],
             "time": "2022-06-27T16:11:16+00:00"
+        },
+        {
+            "name": "painlesscode/breeze-multiauth",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/painlesscode/breeze-multiauth.git",
+                "reference": "621dd8810333977658c58bbbeabe6aff7c8cfa93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/painlesscode/breeze-multiauth/zipball/621dd8810333977658c58bbbeabe6aff7c8cfa93",
+                "reference": "621dd8810333977658c58bbbeabe6aff7c8cfa93",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.42|^9.0",
+                "illuminate/support": "^8.42|^9.0",
+                "illuminate/validation": "^8.42|^9.0",
+                "nikic/php-parser": "^4.6",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Painless\\BreezeMultiAuth\\BreezeMultiAuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Painless\\BreezeMultiAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hazzaz Bin Faiz",
+                    "email": "hazzazbinfaiz@gmail.com"
+                }
+            ],
+            "description": "Multi authentication system with laravel breeze",
+            "keywords": [
+                "auth",
+                "breeze",
+                "laravel",
+                "multiauth"
+            ],
+            "support": {
+                "issues": "https://github.com/painlesscode/breeze-multiauth/issues",
+                "source": "https://github.com/painlesscode/breeze-multiauth/tree/v3.1.0"
+            },
+            "time": "2022-02-19T03:15:48+00:00"
         },
         {
             "name": "phar-io/manifest",
