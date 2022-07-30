@@ -1,5 +1,7 @@
 <?php
 
+use Barryvdh\Debugbar\Facades\Debugbar as FacadesDebugbar;
+use DebugBar\DebugBar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    try {
+        throw new Exception('Try Message!');
+    } catch (Exception $error) {
+        FacadesDebugbar::addException($error);
+    }
     return view('welcome');
 });
 
