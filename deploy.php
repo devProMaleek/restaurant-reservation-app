@@ -43,11 +43,11 @@ task('deploy:secrets', function () {
 // Hosts
 ///////////////////////////////////
 
-host('prod') // Name of the server
-->setHostname('44.202.158.245') // Hostname or IP address
+host('restaurant-reservation') // Name of the server
+->setHostname('52.23.186.106') // Hostname or IP address
 ->set('remote_user', 'ubuntu') // SSH user
 ->set('branch', 'main') // Git branch
-->set('deploy_path', '/var/www/restaurant-reservation-app'); // Deploy path
+->set('deploy_path', '/var/www/restaurant-reservation'); // Deploy path
 
 after('deploy:failed', 'deploy:unlock');  // Unlock after failed deploy
 
